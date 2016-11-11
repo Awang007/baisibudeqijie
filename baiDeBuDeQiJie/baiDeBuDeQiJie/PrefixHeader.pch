@@ -9,6 +9,7 @@
 #ifndef PrefixHeader_pch
 #define PrefixHeader_pch
 #import "CZAdditions.h"
+#import "UIView+AWFrameExtension.h"
 
 #ifdef DEBUG
 #define AWLog(...) NSLog(__VA_ARGS__)

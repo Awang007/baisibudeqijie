@@ -11,7 +11,7 @@
 #import "AWMIineViewController.h"
 #import "AWEssenceViewController.h"
 #import "AWFriendTrendsViewController.h"
-#import "AWCustemTabBar.h"
+#import "AWCustomTabBar.h"
 
 @interface AWMainViewController ()
 
@@ -32,7 +32,7 @@
 
 - (void) setupUI {
 
-    //1.设置tabBar属性
+    //1.设置tabBar属性属性
     NSMutableDictionary * attribute=[NSMutableDictionary dictionary];
     attribute[NSFontAttributeName]=[UIFont systemFontOfSize:12];
     attribute[NSForegroundColorAttributeName]=[UIColor grayColor];
@@ -53,16 +53,20 @@
     [self setupChildController:[[AWMIineViewController alloc] init] title:@"我" image:[UIImage imageNamed:@"tabBar_me_icon"] selectedImage:[UIImage imageNamed:@"tabBar_me_click_icon"]];
     
     //3.把系统tabBar替换成自定义tabBar
-    [self setValue:[[AWCustemTabBar alloc] init] forKey:@"tabBar"];
+    [self setValue:[[AWCustomTabBar alloc] init] forKey:@"tabBar"];
 }
 
 #pragma mark - 添加自控制器
 - (void) setupChildController: (UIViewController *)vc title:(NSString *) title image:(UIImage *)img selectedImage:(UIImage *) selectedImg{
 
+    vc.navigationItem.title=title;
     vc.tabBarItem.title=title;
     vc.tabBarItem.image=img;
     vc.tabBarItem.selectedImage=selectedImg;
-    [self addChildViewController:vc];
+    
+    UINavigationController * nvg=[[UINavigationController alloc] initWithRootViewController:vc];
+    
+    [self addChildViewController:nvg];
 }
 
 @end

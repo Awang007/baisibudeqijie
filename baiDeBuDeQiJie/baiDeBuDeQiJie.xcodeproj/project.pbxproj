@@ -23,7 +23,8 @@
 		3529F1881DD5B410002A0A5C /* AWEssenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3529F1871DD5B410002A0A5C /* AWEssenceViewController.m */; };
 		3529F18B1DD5B448002A0A5C /* AWMIineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3529F18A1DD5B448002A0A5C /* AWMIineViewController.m */; };
 		3529F18E1DD5B470002A0A5C /* AWNewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3529F18D1DD5B470002A0A5C /* AWNewViewController.m */; };
-		3529F1911DD5B71C002A0A5C /* AWCustemTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 3529F1901DD5B71C002A0A5C /* AWCustemTabBar.m */; };
+		3529F1911DD5B71C002A0A5C /* AWCustomTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 3529F1901DD5B71C002A0A5C /* AWCustomTabBar.m */; };
+		35E70EA91DD5E61900DB8D27 /* UIView+AWFrameExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 35E70EA81DD5E61900DB8D27 /* UIView+AWFrameExtension.m */; };
 		CF42EC070D42D048A31E86E5 /* libPods-baiDeBuDeQiJie.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F27FFA0EA5D3DE1024B3F575 /* libPods-baiDeBuDeQiJie.a */; };
 /* End PBXBuildFile section */
 
@@ -62,8 +63,10 @@
 		3529F18A1DD5B448002A0A5C /* AWMIineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AWMIineViewController.m; sourceTree = "<group>"; };
 		3529F18C1DD5B470002A0A5C /* AWNewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWNewViewController.h; sourceTree = "<group>"; };
 		3529F18D1DD5B470002A0A5C /* AWNewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AWNewViewController.m; sourceTree = "<group>"; };
-		3529F18F1DD5B71C002A0A5C /* AWCustemTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWCustemTabBar.h; sourceTree = "<group>"; };
-		3529F1901DD5B71C002A0A5C /* AWCustemTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AWCustemTabBar.m; sourceTree = "<group>"; };
+		3529F18F1DD5B71C002A0A5C /* AWCustomTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWCustomTabBar.h; sourceTree = "<group>"; };
+		3529F1901DD5B71C002A0A5C /* AWCustomTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AWCustomTabBar.m; sourceTree = "<group>"; };
+		35E70EA71DD5E61900DB8D27 /* UIView+AWFrameExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AWFrameExtension.h"; sourceTree = "<group>"; };
+		35E70EA81DD5E61900DB8D27 /* UIView+AWFrameExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AWFrameExtension.m"; sourceTree = "<group>"; };
 		4C9C0F2CD4E631AC1A89C3B6 /* Pods-baiDeBuDeQiJie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-baiDeBuDeQiJie.release.xcconfig"; path = "Pods/Target Support Files/Pods-baiDeBuDeQiJie/Pods-baiDeBuDeQiJie.release.xcconfig"; sourceTree = "<group>"; };
 		F27FFA0EA5D3DE1024B3F575 /* libPods-baiDeBuDeQiJie.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-baiDeBuDeQiJie.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -105,6 +108,8 @@
 				3529F14D1DD59C7C002A0A5C /* Classes */,
 				3529F1391DD599D0002A0A5C /* AppDelegate.h */,
 				3529F13A1DD599D0002A0A5C /* AppDelegate.m */,
+				35E70EA71DD5E61900DB8D27 /* UIView+AWFrameExtension.h */,
+				35E70EA81DD5E61900DB8D27 /* UIView+AWFrameExtension.m */,
 				3529F1421DD599D1002A0A5C /* Assets.xcassets */,
 				3529F1441DD599D1002A0A5C /* LaunchScreen.storyboard */,
 				3529F1471DD599D1002A0A5C /* Info.plist */,
@@ -127,10 +132,10 @@
 			children = (
 				3529F17F1DD5B339002A0A5C /* Base */,
 				3529F1621DD59FCD002A0A5C /* Main ( 主要 ) */,
-				3529F1521DD59E8E002A0A5C /* FriendTrends ( 关注 ) */,
 				3529F14E1DD59C7C002A0A5C /* Essence ( 精华 ) */,
-				3529F14F1DD59C7C002A0A5C /* Mine ( 我的 ) */,
 				3529F1501DD59C7C002A0A5C /* New ( 新帖 ) */,
+				3529F1521DD59E8E002A0A5C /* FriendTrends ( 关注 ) */,
+				3529F14F1DD59C7C002A0A5C /* Mine ( 我的 ) */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -287,8 +292,8 @@
 			children = (
 				3529F1661DD5A1F8002A0A5C /* AWMainViewController.h */,
 				3529F1671DD5A1F8002A0A5C /* AWMainViewController.m */,
-				3529F18F1DD5B71C002A0A5C /* AWCustemTabBar.h */,
-				3529F1901DD5B71C002A0A5C /* AWCustemTabBar.m */,
+				3529F18F1DD5B71C002A0A5C /* AWCustomTabBar.h */,
+				3529F1901DD5B71C002A0A5C /* AWCustomTabBar.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -491,7 +496,8 @@
 				3529F1881DD5B410002A0A5C /* AWEssenceViewController.m in Sources */,
 				3529F13B1DD599D0002A0A5C /* AppDelegate.m in Sources */,
 				3529F18B1DD5B448002A0A5C /* AWMIineViewController.m in Sources */,
-				3529F1911DD5B71C002A0A5C /* AWCustemTabBar.m in Sources */,
+				35E70EA91DD5E61900DB8D27 /* UIView+AWFrameExtension.m in Sources */,
+				3529F1911DD5B71C002A0A5C /* AWCustomTabBar.m in Sources */,
 				3529F1791DD5A2DB002A0A5C /* NSAttributedString+CZAdditon.m in Sources */,
 				3529F17D1DD5A2DB002A0A5C /* UIView+CZAddition.m in Sources */,
 				3529F1851DD5B39C002A0A5C /* AWFriendTrendsViewController.m in Sources */,
