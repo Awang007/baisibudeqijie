@@ -11,6 +11,7 @@
 #import "AWMIineViewController.h"
 #import "AWEssenceViewController.h"
 #import "AWFriendTrendsViewController.h"
+#import "AWCustemTabBar.h"
 
 @interface AWMainViewController ()
 
@@ -51,6 +52,8 @@
     [self setupChildController:[[AWFriendTrendsViewController alloc] init] title:@"关注" image:[UIImage imageNamed:@"tabBar_friendTrends_icon"] selectedImage:[UIImage imageNamed:@"tabBar_friendTrends_click_icon"]];
     [self setupChildController:[[AWMIineViewController alloc] init] title:@"我" image:[UIImage imageNamed:@"tabBar_me_icon"] selectedImage:[UIImage imageNamed:@"tabBar_me_click_icon"]];
     
+    //3.把系统tabBar替换成自定义tabBar
+    [self setValue:[[AWCustemTabBar alloc] init] forKey:@"tabBar"];
 }
 
 #pragma mark - 添加自控制器
