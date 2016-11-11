@@ -1,0 +1,22 @@
+//
+//  PrefixHeader.pch
+//  baiDeBuDeQiJie
+//
+//  Created by 125154454 on 16/11/11.
+//  Copyright © 2016年 aWangLong. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+#import "CZAdditions.h"
+
+#ifdef DEBUG
+#define AWLog(...) NSLog(__VA_ARGS__)
+#else
+#define AWLog(...)
+#endif
+
+
+
+
+#endif /* PrefixHeader_pch */
