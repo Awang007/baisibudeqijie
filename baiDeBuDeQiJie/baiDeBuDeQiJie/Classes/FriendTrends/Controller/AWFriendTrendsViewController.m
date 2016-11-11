@@ -36,12 +36,6 @@
     //1.设置导航栏图标
     self.navigationItem.titleView=[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"MainTitle"]];
     //2.设置导航右边栏
-    UIButton * leftBtn=[[UIButton alloc] init];
-    [leftBtn setBackgroundImage:[UIImage imageNamed:@"friendsRecommentIcon"] forState:UIControlStateNormal];
-    [leftBtn setBackgroundImage:[UIImage imageNamed:@"friendsRecommentIconClick"] forState:UIControlStateHighlighted];
-    leftBtn.size=leftBtn.currentBackgroundImage.size;
-    self.navigationItem.leftBarButtonItem=[[UIBarButtonItem alloc] initWithCustomView:leftBtn];
-    
-    [leftBtn addTarget:self action:@selector(focusClick) forControlEvents:UIControlEventTouchUpInside];
+    self.navigationItem.leftBarButtonItem=[UIBarButtonItem itemWithImage:@"friendsRecommentIcon" highlightImage:@"friendsRecommentIconClick" taget:self anction:@selector(focusClick)];
 }
 @end

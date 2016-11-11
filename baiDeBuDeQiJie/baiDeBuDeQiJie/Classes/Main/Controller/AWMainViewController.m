@@ -41,10 +41,10 @@
     selectedAttribute[NSFontAttributeName]=[UIFont systemFontOfSize:12];
     selectedAttribute[NSForegroundColorAttributeName]=[UIColor darkGrayColor];
     
-    UITabBarItem * item=[[UITabBarItem alloc] init];
+    UITabBarItem * item=[UITabBarItem appearance];//注意点
     [item setTitleTextAttributes:attribute forState:UIControlStateNormal];
     [item setTitleTextAttributes:selectedAttribute forState:UIControlStateSelected];
-    
+
     
     //2.添加自控制器
     [self setupChildController:[[AWEssenceViewController alloc] init] title:@"精华" image:[UIImage imageNamed:@"tabBar_essence_icon"] selectedImage:[UIImage imageNamed:@"tabBar_essence_click_icon"]];

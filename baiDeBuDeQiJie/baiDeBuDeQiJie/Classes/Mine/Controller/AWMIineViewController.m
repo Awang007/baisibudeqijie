@@ -40,22 +40,12 @@
     //1.设置导航栏图标
     self.navigationItem.titleView=[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"MainTitle"]];
     //2.创建导航左边栏的按钮
-    UIButton * settingBtn=[[UIButton alloc] init];
-    [settingBtn setBackgroundImage:[UIImage imageNamed:@"mine-setting-icon"] forState:UIControlStateNormal];
-    [settingBtn setBackgroundImage:[UIImage imageNamed:@"mine-setting-icon-click"] forState:UIControlStateHighlighted];
-    settingBtn.size=settingBtn.currentBackgroundImage.size;
-    [settingBtn addTarget:self action:@selector(settingClick) forControlEvents:UIControlEventTouchUpInside];
-    
-    UIButton * moonBtn=[[UIButton alloc] init];
-    [moonBtn setBackgroundImage:[UIImage imageNamed:@"mine-moon-icon"] forState:UIControlStateNormal];
-    [moonBtn setBackgroundImage:[UIImage imageNamed:@"mine-moon-icon-click"] forState:UIControlStateHighlighted];
-    moonBtn.size=moonBtn.currentBackgroundImage.size;
-    [settingBtn addTarget:self action:@selector(moonClick) forControlEvents:UIControlEventTouchUpInside];
-    
+    UIBarButtonItem * barItemR=[UIBarButtonItem itemWithImage:@"mine-setting-icon" highlightImage:@"mine-setting-icon-click" taget:self anction:@selector(settingClick)];
+    UIBarButtonItem * barItemL=[UIBarButtonItem itemWithImage:@"mine-moon-icon" highlightImage:@"mine-moon-icon-click" taget:self anction:@selector(moonClick)];
     //3.添加到导航右边栏
     [self.navigationItem setRightBarButtonItems:@[
-                                                 [[UIBarButtonItem alloc] initWithCustomView:settingBtn],
-                                              [[UIBarButtonItem alloc] initWithCustomView:moonBtn]
+                                                 barItemR,
+                                              barItemL
                                                  ]];
 }
 

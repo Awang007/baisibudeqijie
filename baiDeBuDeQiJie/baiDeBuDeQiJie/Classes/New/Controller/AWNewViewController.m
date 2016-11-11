@@ -36,14 +36,7 @@
     //1.设置
     self.navigationItem.titleView=[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"MainTitle"]];
     //2.设置导航右边栏
-    UIButton * leftBtn=[[UIButton alloc] init];
-    [leftBtn setBackgroundImage:[UIImage imageNamed:@"MainTagSubIcon"] forState:UIControlStateNormal];
-    [leftBtn setBackgroundImage:[UIImage imageNamed:@"MainTagSubIconClick"] forState:UIControlStateHighlighted];
-    leftBtn.size=leftBtn.currentBackgroundImage.size;
-    self.navigationItem.leftBarButtonItem=[[UIBarButtonItem alloc] initWithCustomView:leftBtn];
-    
-    [leftBtn addTarget:self action:@selector(articleClick) forControlEvents:UIControlEventTouchUpInside];
-    
+    self.navigationItem.leftBarButtonItem=[UIBarButtonItem itemWithImage:@"MainTagSubIcon" highlightImage:@"MainTagSubIconClick" taget:self anction:@selector(articleClick)];
 }
 
 
