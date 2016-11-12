@@ -23,9 +23,11 @@
 		3529F1881DD5B410002A0A5C /* AWEssenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3529F1871DD5B410002A0A5C /* AWEssenceViewController.m */; };
 		3529F18B1DD5B448002A0A5C /* AWMIineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3529F18A1DD5B448002A0A5C /* AWMIineViewController.m */; };
 		3529F18E1DD5B470002A0A5C /* AWNewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3529F18D1DD5B470002A0A5C /* AWNewViewController.m */; };
-		3529F1911DD5B71C002A0A5C /* AWCustomTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 3529F1901DD5B71C002A0A5C /* AWCustomTabBar.m */; };
+		35675D261DD6CDA0004AC079 /* AWTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35675D251DD6CDA0004AC079 /* AWTestViewController.m */; };
+		35675D291DD6CF2E004AC079 /* AWNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35675D281DD6CF2E004AC079 /* AWNavigationViewController.m */; };
 		35E70EA91DD5E61900DB8D27 /* UIView+AWFrameExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 35E70EA81DD5E61900DB8D27 /* UIView+AWFrameExtension.m */; };
 		35E70EAC1DD612BE00DB8D27 /* UIBarButtonItem+AWBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 35E70EAB1DD612BE00DB8D27 /* UIBarButtonItem+AWBarButtonItem.m */; };
+		35E70EAF1DD61E4100DB8D27 /* AWCustomTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 35E70EAE1DD61E4100DB8D27 /* AWCustomTabBar.m */; };
 		CF42EC070D42D048A31E86E5 /* libPods-baiDeBuDeQiJie.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F27FFA0EA5D3DE1024B3F575 /* libPods-baiDeBuDeQiJie.a */; };
 /* End PBXBuildFile section */
 
@@ -64,12 +66,16 @@
 		3529F18A1DD5B448002A0A5C /* AWMIineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AWMIineViewController.m; sourceTree = "<group>"; };
 		3529F18C1DD5B470002A0A5C /* AWNewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWNewViewController.h; sourceTree = "<group>"; };
 		3529F18D1DD5B470002A0A5C /* AWNewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AWNewViewController.m; sourceTree = "<group>"; };
-		3529F18F1DD5B71C002A0A5C /* AWCustomTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWCustomTabBar.h; sourceTree = "<group>"; };
-		3529F1901DD5B71C002A0A5C /* AWCustomTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AWCustomTabBar.m; sourceTree = "<group>"; };
+		35675D241DD6CDA0004AC079 /* AWTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWTestViewController.h; sourceTree = "<group>"; };
+		35675D251DD6CDA0004AC079 /* AWTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AWTestViewController.m; sourceTree = "<group>"; };
+		35675D271DD6CF2E004AC079 /* AWNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWNavigationViewController.h; sourceTree = "<group>"; };
+		35675D281DD6CF2E004AC079 /* AWNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AWNavigationViewController.m; sourceTree = "<group>"; };
 		35E70EA71DD5E61900DB8D27 /* UIView+AWFrameExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AWFrameExtension.h"; sourceTree = "<group>"; };
 		35E70EA81DD5E61900DB8D27 /* UIView+AWFrameExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AWFrameExtension.m"; sourceTree = "<group>"; };
 		35E70EAA1DD612BE00DB8D27 /* UIBarButtonItem+AWBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+AWBarButtonItem.h"; sourceTree = "<group>"; };
 		35E70EAB1DD612BE00DB8D27 /* UIBarButtonItem+AWBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+AWBarButtonItem.m"; sourceTree = "<group>"; };
+		35E70EAD1DD61E4100DB8D27 /* AWCustomTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWCustomTabBar.h; sourceTree = "<group>"; };
+		35E70EAE1DD61E4100DB8D27 /* AWCustomTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AWCustomTabBar.m; sourceTree = "<group>"; };
 		4C9C0F2CD4E631AC1A89C3B6 /* Pods-baiDeBuDeQiJie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-baiDeBuDeQiJie.release.xcconfig"; path = "Pods/Target Support Files/Pods-baiDeBuDeQiJie/Pods-baiDeBuDeQiJie.release.xcconfig"; sourceTree = "<group>"; };
 		F27FFA0EA5D3DE1024B3F575 /* libPods-baiDeBuDeQiJie.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-baiDeBuDeQiJie.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -115,6 +121,8 @@
 				35E70EA81DD5E61900DB8D27 /* UIView+AWFrameExtension.m */,
 				35E70EAA1DD612BE00DB8D27 /* UIBarButtonItem+AWBarButtonItem.h */,
 				35E70EAB1DD612BE00DB8D27 /* UIBarButtonItem+AWBarButtonItem.m */,
+				35675D241DD6CDA0004AC079 /* AWTestViewController.h */,
+				35675D251DD6CDA0004AC079 /* AWTestViewController.m */,
 				3529F1421DD599D1002A0A5C /* Assets.xcassets */,
 				3529F1441DD599D1002A0A5C /* LaunchScreen.storyboard */,
 				3529F1471DD599D1002A0A5C /* Info.plist */,
@@ -297,8 +305,8 @@
 			children = (
 				3529F1661DD5A1F8002A0A5C /* AWMainViewController.h */,
 				3529F1671DD5A1F8002A0A5C /* AWMainViewController.m */,
-				3529F18F1DD5B71C002A0A5C /* AWCustomTabBar.h */,
-				3529F1901DD5B71C002A0A5C /* AWCustomTabBar.m */,
+				35675D271DD6CF2E004AC079 /* AWNavigationViewController.h */,
+				35675D281DD6CF2E004AC079 /* AWNavigationViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -313,6 +321,8 @@
 		3529F1651DD59FCD002A0A5C /* View */ = {
 			isa = PBXGroup;
 			children = (
+				35E70EAD1DD61E4100DB8D27 /* AWCustomTabBar.h */,
+				35E70EAE1DD61E4100DB8D27 /* AWCustomTabBar.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -496,14 +506,16 @@
 				3529F17B1DD5A2DB002A0A5C /* UIColor+CZAddition.m in Sources */,
 				3529F17C1DD5A2DB002A0A5C /* UILabel+CZAddition.m in Sources */,
 				3529F17A1DD5A2DB002A0A5C /* NSObject+CZAddition.m in Sources */,
+				35675D291DD6CF2E004AC079 /* AWNavigationViewController.m in Sources */,
 				3529F1821DD5B354002A0A5C /* AWBaseViewController.m in Sources */,
 				3529F1681DD5A1F8002A0A5C /* AWMainViewController.m in Sources */,
 				3529F1881DD5B410002A0A5C /* AWEssenceViewController.m in Sources */,
+				35675D261DD6CDA0004AC079 /* AWTestViewController.m in Sources */,
 				3529F13B1DD599D0002A0A5C /* AppDelegate.m in Sources */,
 				35E70EAC1DD612BE00DB8D27 /* UIBarButtonItem+AWBarButtonItem.m in Sources */,
 				3529F18B1DD5B448002A0A5C /* AWMIineViewController.m in Sources */,
+				35E70EAF1DD61E4100DB8D27 /* AWCustomTabBar.m in Sources */,
 				35E70EA91DD5E61900DB8D27 /* UIView+AWFrameExtension.m in Sources */,
-				3529F1911DD5B71C002A0A5C /* AWCustomTabBar.m in Sources */,
 				3529F1791DD5A2DB002A0A5C /* NSAttributedString+CZAdditon.m in Sources */,
 				3529F17D1DD5A2DB002A0A5C /* UIView+CZAddition.m in Sources */,
 				3529F1851DD5B39C002A0A5C /* AWFriendTrendsViewController.m in Sources */,
@@ -620,6 +632,7 @@
 			baseConfigurationReference = 0137D446A899870E047E7BA3 /* Pods-baiDeBuDeQiJie.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PREFIX_HEADER = baiDeBuDeQiJie/PrefixHeader.pch;
 				INFOPLIST_FILE = baiDeBuDeQiJie/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -634,6 +647,7 @@
 			baseConfigurationReference = 4C9C0F2CD4E631AC1A89C3B6 /* Pods-baiDeBuDeQiJie.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PREFIX_HEADER = baiDeBuDeQiJie/PrefixHeader.pch;
 				INFOPLIST_FILE = baiDeBuDeQiJie/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;

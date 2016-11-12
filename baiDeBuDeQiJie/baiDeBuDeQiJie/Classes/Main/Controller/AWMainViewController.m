@@ -12,6 +12,7 @@
 #import "AWEssenceViewController.h"
 #import "AWFriendTrendsViewController.h"
 #import "AWCustomTabBar.h"
+#import "AWNavigationViewController.h"
 
 @interface AWMainViewController ()
 
@@ -29,7 +30,7 @@
     // Dispose of any resources that can be recreated.
 }
 
-
+#pragma mark - setting User Interface
 - (void) setupUI {
 
     //1.设置tabBar属性属性
@@ -56,7 +57,7 @@
     [self setValue:[[AWCustomTabBar alloc] init] forKey:@"tabBar"];
 }
 
-#pragma mark - 添加自控制器
+#pragma mark - add Childs Controller
 - (void) setupChildController: (UIViewController *)vc title:(NSString *) title image:(UIImage *)img selectedImage:(UIImage *) selectedImg{
 
     vc.navigationItem.title=title;
@@ -64,7 +65,7 @@
     vc.tabBarItem.image=img;
     vc.tabBarItem.selectedImage=selectedImg;
     
-    UINavigationController * nvg=[[UINavigationController alloc] initWithRootViewController:vc];
+    AWNavigationViewController * nvg=[[AWNavigationViewController alloc] initWithRootViewController:vc];
     
     [self addChildViewController:nvg];
 }
