@@ -23,8 +23,8 @@
 		3529F1881DD5B410002A0A5C /* AWEssenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3529F1871DD5B410002A0A5C /* AWEssenceViewController.m */; };
 		3529F18B1DD5B448002A0A5C /* AWMIineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3529F18A1DD5B448002A0A5C /* AWMIineViewController.m */; };
 		3529F18E1DD5B470002A0A5C /* AWNewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3529F18D1DD5B470002A0A5C /* AWNewViewController.m */; };
-		35675D261DD6CDA0004AC079 /* AWTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35675D251DD6CDA0004AC079 /* AWTestViewController.m */; };
 		35675D291DD6CF2E004AC079 /* AWNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35675D281DD6CF2E004AC079 /* AWNavigationViewController.m */; };
+		35675D2B1DD70A5E004AC079 /* AWFriendTrendsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35675D2A1DD70A5E004AC079 /* AWFriendTrendsViewController.xib */; };
 		35E70EA91DD5E61900DB8D27 /* UIView+AWFrameExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 35E70EA81DD5E61900DB8D27 /* UIView+AWFrameExtension.m */; };
 		35E70EAC1DD612BE00DB8D27 /* UIBarButtonItem+AWBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 35E70EAB1DD612BE00DB8D27 /* UIBarButtonItem+AWBarButtonItem.m */; };
 		35E70EAF1DD61E4100DB8D27 /* AWCustomTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 35E70EAE1DD61E4100DB8D27 /* AWCustomTabBar.m */; };
@@ -66,10 +66,9 @@
 		3529F18A1DD5B448002A0A5C /* AWMIineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AWMIineViewController.m; sourceTree = "<group>"; };
 		3529F18C1DD5B470002A0A5C /* AWNewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWNewViewController.h; sourceTree = "<group>"; };
 		3529F18D1DD5B470002A0A5C /* AWNewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AWNewViewController.m; sourceTree = "<group>"; };
-		35675D241DD6CDA0004AC079 /* AWTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWTestViewController.h; sourceTree = "<group>"; };
-		35675D251DD6CDA0004AC079 /* AWTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AWTestViewController.m; sourceTree = "<group>"; };
 		35675D271DD6CF2E004AC079 /* AWNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWNavigationViewController.h; sourceTree = "<group>"; };
 		35675D281DD6CF2E004AC079 /* AWNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AWNavigationViewController.m; sourceTree = "<group>"; };
+		35675D2A1DD70A5E004AC079 /* AWFriendTrendsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AWFriendTrendsViewController.xib; sourceTree = "<group>"; };
 		35E70EA71DD5E61900DB8D27 /* UIView+AWFrameExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AWFrameExtension.h"; sourceTree = "<group>"; };
 		35E70EA81DD5E61900DB8D27 /* UIView+AWFrameExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AWFrameExtension.m"; sourceTree = "<group>"; };
 		35E70EAA1DD612BE00DB8D27 /* UIBarButtonItem+AWBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+AWBarButtonItem.h"; sourceTree = "<group>"; };
@@ -121,8 +120,6 @@
 				35E70EA81DD5E61900DB8D27 /* UIView+AWFrameExtension.m */,
 				35E70EAA1DD612BE00DB8D27 /* UIBarButtonItem+AWBarButtonItem.h */,
 				35E70EAB1DD612BE00DB8D27 /* UIBarButtonItem+AWBarButtonItem.m */,
-				35675D241DD6CDA0004AC079 /* AWTestViewController.h */,
-				35675D251DD6CDA0004AC079 /* AWTestViewController.m */,
 				3529F1421DD599D1002A0A5C /* Assets.xcassets */,
 				3529F1441DD599D1002A0A5C /* LaunchScreen.storyboard */,
 				3529F1471DD599D1002A0A5C /* Info.plist */,
@@ -202,6 +199,7 @@
 			children = (
 				3529F1831DD5B39C002A0A5C /* AWFriendTrendsViewController.h */,
 				3529F1841DD5B39C002A0A5C /* AWFriendTrendsViewController.m */,
+				35675D2A1DD70A5E004AC079 /* AWFriendTrendsViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -445,6 +443,7 @@
 			files = (
 				3529F1461DD599D1002A0A5C /* LaunchScreen.storyboard in Resources */,
 				3529F1431DD599D1002A0A5C /* Assets.xcassets in Resources */,
+				35675D2B1DD70A5E004AC079 /* AWFriendTrendsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -510,7 +509,6 @@
 				3529F1821DD5B354002A0A5C /* AWBaseViewController.m in Sources */,
 				3529F1681DD5A1F8002A0A5C /* AWMainViewController.m in Sources */,
 				3529F1881DD5B410002A0A5C /* AWEssenceViewController.m in Sources */,
-				35675D261DD6CDA0004AC079 /* AWTestViewController.m in Sources */,
 				3529F13B1DD599D0002A0A5C /* AppDelegate.m in Sources */,
 				35E70EAC1DD612BE00DB8D27 /* UIBarButtonItem+AWBarButtonItem.m in Sources */,
 				3529F18B1DD5B448002A0A5C /* AWMIineViewController.m in Sources */,

@@ -16,14 +16,21 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    //设置导航栏背景颜色
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    
 }
 
++ (void)initialize{
+
+    UINavigationBar * bar=[UINavigationBar appearance];
+    [bar setBackgroundImage:[UIImage imageNamed:@"navigationbarBackgroundWhite"] forBarMetrics:UIBarMetricsDefault];
+}
+
+#pragma mark - setting BackButton
 - (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated{
 
     if (self.childViewControllers.count>0){//如果push进来的不是第一控制器

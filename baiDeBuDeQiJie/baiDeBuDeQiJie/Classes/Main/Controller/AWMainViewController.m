@@ -30,8 +30,8 @@
     // Dispose of any resources that can be recreated.
 }
 
-#pragma mark - setting User Interface
-- (void) setupUI {
+#pragma mark - 当第一次调用AWMainViewController类时候调用这个方法
++ (void)initialize{
 
     //1.设置tabBar属性属性
     NSMutableDictionary * attribute=[NSMutableDictionary dictionary];
@@ -46,14 +46,18 @@
     [item setTitleTextAttributes:attribute forState:UIControlStateNormal];
     [item setTitleTextAttributes:selectedAttribute forState:UIControlStateSelected];
 
+}
+
+#pragma mark - setting User Interface
+- (void) setupUI {
     
-    //2.添加自控制器
+    //1.添加自控制器
     [self setupChildController:[[AWEssenceViewController alloc] init] title:@"精华" image:[UIImage imageNamed:@"tabBar_essence_icon"] selectedImage:[UIImage imageNamed:@"tabBar_essence_click_icon"]];
     [self setupChildController:[[AWNewViewController alloc] init] title:@"新帖" image:[UIImage imageNamed:@"tabBar_new_icon"] selectedImage:[UIImage imageNamed:@"tabBar_new_click_icon"]];
     [self setupChildController:[[AWFriendTrendsViewController alloc] init] title:@"关注" image:[UIImage imageNamed:@"tabBar_friendTrends_icon"] selectedImage:[UIImage imageNamed:@"tabBar_friendTrends_click_icon"]];
     [self setupChildController:[[AWMIineViewController alloc] init] title:@"我" image:[UIImage imageNamed:@"tabBar_me_icon"] selectedImage:[UIImage imageNamed:@"tabBar_me_click_icon"]];
     
-    //3.把系统tabBar替换成自定义tabBar
+    //2.把系统tabBar替换成自定义tabBar
     [self setValue:[[AWCustomTabBar alloc] init] forKey:@"tabBar"];
 }
 

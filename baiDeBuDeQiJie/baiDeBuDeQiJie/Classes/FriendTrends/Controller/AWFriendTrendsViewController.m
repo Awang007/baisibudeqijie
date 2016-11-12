@@ -7,7 +7,7 @@
 //
 
 #import "AWFriendTrendsViewController.h"
-#import "AWTestViewController.h"
+
 @interface AWFriendTrendsViewController ()
 
 @end
@@ -28,12 +28,6 @@
 - (void)focusClick {
 
     AWLog(@"关注");
-}
-- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
-    
-    AWTestViewController * testVC=[[AWTestViewController alloc] init];
-    [self.navigationController pushViewController:testVC animated:YES];
-
 }
 
 #pragma mark - setting User Interface

@@ -7,7 +7,7 @@
 //
 
 #import "AWEssenceViewController.h"
-#import "AWTestViewController.h"
+
 @interface AWEssenceViewController ()
 
 @end
@@ -23,15 +23,6 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
-
-- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
-    
-    AWTestViewController * testVC=[[AWTestViewController alloc] init];
-    [self.navigationController pushViewController:testVC animated:YES];
-
-}
-
 
 #pragma mark - response for classicsClick
 - (void)classicsClick {

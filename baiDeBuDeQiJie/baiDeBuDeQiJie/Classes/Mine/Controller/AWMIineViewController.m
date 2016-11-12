@@ -7,7 +7,7 @@
 //
 
 #import "AWMIineViewController.h"
-#import "AWTestViewController.h"
+
 @interface AWMIineViewController ()
 
 @end
@@ -33,13 +33,6 @@
     AWLog(@"夜间模式");
 }
 
-
-- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
-    
-    AWTestViewController * testVC=[[AWTestViewController alloc] init];
-    [self.navigationController pushViewController:testVC animated:YES];
-
-}
 
 #pragma mark - setting User Interface
 - (void)setupUI {
