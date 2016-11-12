@@ -7,13 +7,14 @@
 //
 
 #import "AWFriendTrendsViewController.h"
+#import "AWRecommendViewController.h"
 
 @interface AWFriendTrendsViewController ()
 
 @end
 
 @implementation AWFriendTrendsViewController
-
+//xib中的换行 ( option+enter )
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
@@ -26,8 +27,10 @@
 
 #pragma mark - response for focusClick method
 - (void)focusClick {
-
     AWLog(@"关注");
+    AWRecommendViewController * recommendVC=[[AWRecommendViewController alloc] init];
+    
+    [self.navigationController pushViewController:recommendVC animated:YES];
 }
 
 #pragma mark - setting User Interface

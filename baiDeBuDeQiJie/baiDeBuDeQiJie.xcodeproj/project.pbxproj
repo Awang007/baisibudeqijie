@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3501F5081DD73D2300C19174 /* AWRecommedCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3501F5061DD73D2300C19174 /* AWRecommedCell.m */; };
+		3501F5091DD73D2300C19174 /* AWRecommedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3501F5071DD73D2300C19174 /* AWRecommedCell.xib */; };
 		3529F1381DD599D0002A0A5C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3529F1371DD599D0002A0A5C /* main.m */; };
 		3529F13B1DD599D0002A0A5C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3529F13A1DD599D0002A0A5C /* AppDelegate.m */; };
 		3529F1431DD599D1002A0A5C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3529F1421DD599D1002A0A5C /* Assets.xcassets */; };
@@ -25,6 +27,8 @@
 		3529F18E1DD5B470002A0A5C /* AWNewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3529F18D1DD5B470002A0A5C /* AWNewViewController.m */; };
 		35675D291DD6CF2E004AC079 /* AWNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35675D281DD6CF2E004AC079 /* AWNavigationViewController.m */; };
 		35675D2B1DD70A5E004AC079 /* AWFriendTrendsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35675D2A1DD70A5E004AC079 /* AWFriendTrendsViewController.xib */; };
+		35675D2F1DD71483004AC079 /* AWRecommendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35675D2D1DD71483004AC079 /* AWRecommendViewController.m */; };
+		35675D301DD71483004AC079 /* AWRecommendViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35675D2E1DD71483004AC079 /* AWRecommendViewController.xib */; };
 		35E70EA91DD5E61900DB8D27 /* UIView+AWFrameExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 35E70EA81DD5E61900DB8D27 /* UIView+AWFrameExtension.m */; };
 		35E70EAC1DD612BE00DB8D27 /* UIBarButtonItem+AWBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 35E70EAB1DD612BE00DB8D27 /* UIBarButtonItem+AWBarButtonItem.m */; };
 		35E70EAF1DD61E4100DB8D27 /* AWCustomTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 35E70EAE1DD61E4100DB8D27 /* AWCustomTabBar.m */; };
@@ -33,6 +37,9 @@
 
 /* Begin PBXFileReference section */
 		0137D446A899870E047E7BA3 /* Pods-baiDeBuDeQiJie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-baiDeBuDeQiJie.debug.xcconfig"; path = "Pods/Target Support Files/Pods-baiDeBuDeQiJie/Pods-baiDeBuDeQiJie.debug.xcconfig"; sourceTree = "<group>"; };
+		3501F5051DD73D2300C19174 /* AWRecommedCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWRecommedCell.h; sourceTree = "<group>"; };
+		3501F5061DD73D2300C19174 /* AWRecommedCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AWRecommedCell.m; sourceTree = "<group>"; };
+		3501F5071DD73D2300C19174 /* AWRecommedCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AWRecommedCell.xib; sourceTree = "<group>"; };
 		3529F1331DD599D0002A0A5C /* baiDeBuDeQiJie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = baiDeBuDeQiJie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3529F1371DD599D0002A0A5C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3529F1391DD599D0002A0A5C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -69,6 +76,9 @@
 		35675D271DD6CF2E004AC079 /* AWNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWNavigationViewController.h; sourceTree = "<group>"; };
 		35675D281DD6CF2E004AC079 /* AWNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AWNavigationViewController.m; sourceTree = "<group>"; };
 		35675D2A1DD70A5E004AC079 /* AWFriendTrendsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AWFriendTrendsViewController.xib; sourceTree = "<group>"; };
+		35675D2C1DD71483004AC079 /* AWRecommendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWRecommendViewController.h; sourceTree = "<group>"; };
+		35675D2D1DD71483004AC079 /* AWRecommendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AWRecommendViewController.m; sourceTree = "<group>"; };
+		35675D2E1DD71483004AC079 /* AWRecommendViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AWRecommendViewController.xib; sourceTree = "<group>"; };
 		35E70EA71DD5E61900DB8D27 /* UIView+AWFrameExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AWFrameExtension.h"; sourceTree = "<group>"; };
 		35E70EA81DD5E61900DB8D27 /* UIView+AWFrameExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AWFrameExtension.m"; sourceTree = "<group>"; };
 		35E70EAA1DD612BE00DB8D27 /* UIBarButtonItem+AWBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+AWBarButtonItem.h"; sourceTree = "<group>"; };
@@ -200,6 +210,9 @@
 				3529F1831DD5B39C002A0A5C /* AWFriendTrendsViewController.h */,
 				3529F1841DD5B39C002A0A5C /* AWFriendTrendsViewController.m */,
 				35675D2A1DD70A5E004AC079 /* AWFriendTrendsViewController.xib */,
+				35675D2C1DD71483004AC079 /* AWRecommendViewController.h */,
+				35675D2D1DD71483004AC079 /* AWRecommendViewController.m */,
+				35675D2E1DD71483004AC079 /* AWRecommendViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -214,6 +227,9 @@
 		3529F1551DD59F16002A0A5C /* View */ = {
 			isa = PBXGroup;
 			children = (
+				3501F5051DD73D2300C19174 /* AWRecommedCell.h */,
+				3501F5061DD73D2300C19174 /* AWRecommedCell.m */,
+				3501F5071DD73D2300C19174 /* AWRecommedCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -444,6 +460,8 @@
 				3529F1461DD599D1002A0A5C /* LaunchScreen.storyboard in Resources */,
 				3529F1431DD599D1002A0A5C /* Assets.xcassets in Resources */,
 				35675D2B1DD70A5E004AC079 /* AWFriendTrendsViewController.xib in Resources */,
+				35675D301DD71483004AC079 /* AWRecommendViewController.xib in Resources */,
+				3501F5091DD73D2300C19174 /* AWRecommedCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -505,11 +523,13 @@
 				3529F17B1DD5A2DB002A0A5C /* UIColor+CZAddition.m in Sources */,
 				3529F17C1DD5A2DB002A0A5C /* UILabel+CZAddition.m in Sources */,
 				3529F17A1DD5A2DB002A0A5C /* NSObject+CZAddition.m in Sources */,
+				3501F5081DD73D2300C19174 /* AWRecommedCell.m in Sources */,
 				35675D291DD6CF2E004AC079 /* AWNavigationViewController.m in Sources */,
 				3529F1821DD5B354002A0A5C /* AWBaseViewController.m in Sources */,
 				3529F1681DD5A1F8002A0A5C /* AWMainViewController.m in Sources */,
 				3529F1881DD5B410002A0A5C /* AWEssenceViewController.m in Sources */,
 				3529F13B1DD599D0002A0A5C /* AppDelegate.m in Sources */,
+				35675D2F1DD71483004AC079 /* AWRecommendViewController.m in Sources */,
 				35E70EAC1DD612BE00DB8D27 /* UIBarButtonItem+AWBarButtonItem.m in Sources */,
 				3529F18B1DD5B448002A0A5C /* AWMIineViewController.m in Sources */,
 				35E70EAF1DD61E4100DB8D27 /* AWCustomTabBar.m in Sources */,

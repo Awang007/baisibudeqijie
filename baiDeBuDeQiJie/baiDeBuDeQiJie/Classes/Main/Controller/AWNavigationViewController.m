@@ -48,6 +48,8 @@
         
         [btn addTarget:self action:@selector(backClick) forControlEvents:UIControlEventTouchUpInside];
         viewController.navigationItem.leftBarButtonItem=[[UIBarButtonItem alloc] initWithCustomView:btn];//这里必须设置目标控制器的navigationItem.( 另外,返回键backBarButtonItem 不能够自定义的 )
+        
+        viewController.hidesBottomBarWhenPushed=YES;
     }
     [super pushViewController:viewController animated:animated];
     
@@ -58,6 +60,7 @@
 
     AWLog(@"返回");
     [self popViewControllerAnimated:YES];
+    
 }
 
 
