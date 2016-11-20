@@ -7,11 +7,14 @@
 //
 
 #import "AWRecommedCell.h"
+#import "AWRecommendCategory.h"
 
 @interface AWRecommedCell ()
 
 //选中提示栏
 @property (weak, nonatomic) IBOutlet UIView *selectedIndicate;
+
+
 
 @end
 
@@ -20,7 +23,15 @@
 - (void)awakeFromNib {
     [super awakeFromNib];
     
+    //默认
     
+}
+
+-(void)setCategory:(AWRecommendCategory *)category{
+
+    _category=category;
+    self.textLabel.text=_category.name;
+
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

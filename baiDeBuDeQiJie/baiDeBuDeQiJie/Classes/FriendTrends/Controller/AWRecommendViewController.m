@@ -8,16 +8,29 @@
 
 #import "AWRecommendViewController.h"
 #import "AWRecommedCell.h"
-#import <AFNetworking.h>
-#import <SVProgressHUD.h>
+#import "AWRecommendCategory.h"
+#import "AWRecommendUserInFo.h"
+#import <MJExtension.h>
 
 //定义一个可重用cellID
 static NSString * categoryCell=@"category";
 
-@interface AWRecommendViewController ()<UITableViewDataSource>
+@interface AWRecommendViewController ()<UITableViewDataSource,UITableViewDelegate>
 
+//** 分类表格 */
 @property (weak, nonatomic) IBOutlet UITableView *categoryTableView;
 
+//** 用户表格 */
+@property (weak, nonatomic) IBOutlet UITableView *userInFoTableView;
+
+//** 分类模型 */
+@property (strong,nonatomic) NSArray * categoryList;
+
+//** 用户模型 */
+@property (strong,nonatomic) NSArray * userInFoList;
+
+//** 表格的行数 ( row ) */
+@property (assign,nonatomic) NSInteger tableViewRow;
 
 @end
 
@@ -45,27 +58,61 @@ static NSString * categoryCell=@"category";
     parameters[@"c"]=@"subscribe";
     
     [SVProgressHUD show];
-    [[AFHTTPSessionManager manager] GET:@"http://api.budejie.com/api/api_open.php" parameters:parameters progress:^(NSProgress * _Nonnull downloadProgress) {
-        AWLog(@"下载进度--%@",downloadProgress);
+    [[AFHTTPSessionManager manager] GET:@"http://api.budejie.com/api/api_open.php" parameters:parameters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        NSLog(@"%@",responseObject);
+        //1.转数据
+        NSArray * list=responseObject[@"list"];
+        self.categoryList=[AWRecommendCategory mj_objectArrayWithKeyValuesArray:list];
+        
+        NSLog(@"");
         [SVProgressHUD dismiss];
-    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        AWLog(@"成功!");
-        [SVProgressHUD dismiss];
+        //刷新数据
+        [self.categoryTableView reloadData];
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         AWLog(@"失败");
         [SVProgressHUD dismiss];
     }];
 }
 
+#pragma mark - UITabBarDelegate 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    AWLog(@"%zd",indexPath.row);
+    AWRecommendCategory * category=_categoryList[indexPath.row];
+    
+    //1.设置请求参数
+    NSMutableDictionary * parameters=[NSMutableDictionary dictionary];
+    parameters[@"a"]=@"list";
+    parameters[@"c"]=@"subscribe";
+    parameters[@"category_id"]=category.id;
+   
+    //2.发送网络请求http://api.budejie.com/api/api_open.php
+    [[AFHTTPSessionManager manager] GET:@"http://api.budejie.com/api/api_open.php" parameters:parameters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        AWLog(@"%@",responseObject);
+        self.userInFoList=[AWRecommendUserInFo mj_objectArrayWithKeyValuesArray:responseObject[@"list"]];
+        
+        //刷新列表
+        [self.userInFoTableView reloadData];
+
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        AWLog(@"%@",error);
+    }];
+
+}
+
 #pragma mark - UITableViewDataSource
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-
-    return 10;
+    
+    if (tableView==_categoryTableView) {
+        self.tableViewRow=_categoryList.count;
+    }else {
+        self.tableViewRow=_userInFoList.count;
+    }
+    return _tableViewRow;
 }
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
 
     AWRecommedCell * cell=[tableView dequeueReusableCellWithIdentifier:categoryCell forIndexPath:indexPath];
-    cell.textLabel.text=@"列表";
+    cell.category=self.categoryList[indexPath.row];
     return cell;
 }
 

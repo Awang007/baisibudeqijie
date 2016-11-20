@@ -45,7 +45,7 @@
             <connections>
                 <outlet property="selectedIndicate" destination="XF7-rJ-Mh3" id="4Rz-Ty-5zg"/>
             </connections>
-            <point key="canvasLocation" x="159" y="21"/>
+            <point key="canvasLocation" x="107" y="17"/>
         </tableViewCell>
     </objects>
 </document>

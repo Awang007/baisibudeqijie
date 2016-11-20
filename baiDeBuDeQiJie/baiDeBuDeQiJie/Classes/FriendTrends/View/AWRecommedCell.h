@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+@class AWRecommendCategory;
 
 @interface AWRecommedCell : UITableViewCell
+
+//** 分类模型 */
+@property (nonatomic,strong) AWRecommendCategory * category;
 
 @end

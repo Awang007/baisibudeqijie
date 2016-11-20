@@ -11,6 +11,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AWRecommendViewController">
             <connections>
                 <outlet property="categoryTableView" destination="rQt-VP-fGs" id="f8x-8P-2Sc"/>
+                <outlet property="userInFoTableView" destination="wVF-7P-dWL" id="VX2-Rw-dxM"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -30,11 +31,19 @@
                         <outlet property="delegate" destination="-1" id="HnX-ht-3km"/>
                     </connections>
                 </tableView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="wVF-7P-dWL">
+                    <rect key="frame" x="80" y="0.0" width="295" height="667"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="rQt-VP-fGs" secondAttribute="bottom" id="2h4-nF-bxz"/>
                 <constraint firstItem="rQt-VP-fGs" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="7ZS-46-zPD"/>
+                <constraint firstAttribute="trailing" secondItem="wVF-7P-dWL" secondAttribute="trailing" id="TcD-hG-jMb"/>
+                <constraint firstItem="wVF-7P-dWL" firstAttribute="leading" secondItem="rQt-VP-fGs" secondAttribute="trailing" id="Wbi-dZ-FYF"/>
+                <constraint firstItem="wVF-7P-dWL" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="gD5-xm-zX8"/>
+                <constraint firstAttribute="bottom" secondItem="wVF-7P-dWL" secondAttribute="bottom" id="uvd-DU-MVM"/>
                 <constraint firstItem="rQt-VP-fGs" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="zYK-VK-boa"/>
             </constraints>
             <point key="canvasLocation" x="-27" y="-206"/>
